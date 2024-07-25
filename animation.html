@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seni Kode Sederhana Dida</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes progress-animation {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 25%;
+      }
+    }
+
+    .progress-bar {
+      animation: progress-animation 10s ease-in-out;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      background-size: 200% 100%;
+    }
+  </style>
+</head>
+<body>
+  <section class="flex min-h-screen items-center justify-center bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400">
+    <div class="w-full max-w-4xl space-y-2 rounded-lg bg-white p-4 shadow-lg">
+      <label class="block text-lg font-black text-gray-700">Progress</label>
+      <div class="relative h-20 overflow-hidden rounded-full bg-gray-200">
+        <div class="absolute inset-y-0 left-8 flex items-center justify-center text-4xl font-black tracking-widest text-white">¼ Abad</div>
+        <div class="progress-bar h-full rounded-full" style="width: 25%;"></div>
+      </div>
+      <div class="flex justify-center text-sm text-gray-400">25% Completed</div>
+    </div>
+  </section>   
+</body>
+</html>
